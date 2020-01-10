@@ -9,6 +9,9 @@ import {
   Col
 } from "reactstrap";
 
+import { connect } from "react-redux";
+import setBgAction from "actions/setBgAction";
+
 import { thead, tbody } from "variables/general";
 import GeneralContext from "variables/general"
 
@@ -86,7 +89,7 @@ class RegularTables extends React.Component {
                                 return (
                                   <td key={key} className="text-left">
 
-                                    <button onClick={() => this.handleRemove({prop})}>{prop}</button>
+                                    <button onClick={() => { props.setBgAction("white"); }}>{prop}</button>
 
                                   </td>
                                 );
@@ -149,6 +152,11 @@ class RegularTables extends React.Component {
   }
 }
 
+const mapStateToProps = state => ({
+  ...state
+});
 
-
-export default RegularTables;
+const mapDispatchToProps = dispatch => ({
+  setBgAction: (payload) => dispatch(setBgAction(payload))
+});
+export default connect(mapStateToProps, mapDispatchToProps)(RegularTables);

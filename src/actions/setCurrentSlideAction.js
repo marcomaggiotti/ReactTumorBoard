@@ -1,6 +1,6 @@
 const setCurrentSlide = (payload) => {
   return {
-    type: "colorChange",
+    type: "slideChange",
     payload
   }
 }
