@@ -1,6 +1,6 @@
 const setColorAction = (payload) => {
   return {
-    type: "colorChange",
+    type: "slideChange",
     payload
   }
 }

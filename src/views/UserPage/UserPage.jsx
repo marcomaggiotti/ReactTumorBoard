@@ -20,7 +20,7 @@ class User extends React.Component {
       date: new Date(),
       slideId : "BRCA_03",
       slideProtein : "MIB1",
-      imageUrl : "http://127.0.0.1:8000/cdn/orig_3.jpg"
+      imageUrl : "http://127.0.0.1:8000/cdn/TCGA-OL-A5RW-01Z-00-DX1.E16DE8EE-31AF-4EAF-A85F-DB3E3E2C3BFF_32_64_1_1_13120_9408_2_8_1.0_8_svs.jpeg"
     }
   }
 
